@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid mb-5">
     <div class="row">
       <!--SIDEBAR VERTICAL-->
       <div class="col-2">
@@ -50,6 +50,31 @@
                           onclick="search()">
                           GO
                         </button>
+                      </div>
+                    </div>
+                   
+                    <button class="btn btn.btn-outline-secondary btn-sm text-light" type="button" id="button-titles"
+                      onclick="showTitles()" data-toggle="modal" data-target="#titlesModal">
+                      <i class="fa-solid fa-plus text-light"></i>
+                      Crea Lista
+                    </button>
+                    <div class="modal fade" id="titlesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Albums :</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body" id="modal-inner">
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -99,7 +124,7 @@
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="metallica" class="d-none">
+            <div id="metallica" class="">
               <h2>Metallica</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="metallicaSection">
               </div>
@@ -108,7 +133,7 @@
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="queen" class="d-none">
+            <div id="queen" class="">
               <h2>Queen</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="queenSection">
               </div>
@@ -169,14 +194,14 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
-
+    </script>
+  <script src="https://kit.fontawesome.com/b6ee0b770b.js" crossorigin="anonymous"></script>
   <script src="script.js">
 
   </script>
