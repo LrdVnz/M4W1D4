@@ -49,10 +49,12 @@ let showTitles = () => {
   for(key in albumTitles) {
    let newUl = document.createElement('ul');
     newUl.innerText = key + ' :'; 
+    newUl.classList.add('list-group')
     console.log(key)
      for (let i = 0; i < albumTitles[key].length; i++){
       let newLi = document.createElement('li');
       newLi.innerText = albumTitles[key][i];
+      newLi.classList.add('list-group-item')
       newUl.appendChild(newLi);
      }
 
